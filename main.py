@@ -22,7 +22,6 @@ def about():
 @app.route("/contact-me" )
 def contact_me():
     print(request.method)
-
     return render_template('contact.html')
 
 @app.route("/post/<int:index>")
